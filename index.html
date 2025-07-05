@@ -3,9 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Punit Jangid - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #555879 0%, #98A1BC 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .about h2 {
+            color: #555879;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .education {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border-left: 4px solid #98A1BC;
+        }
+
+        .education h3 {
+            color: #555879;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .education p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .projects h2 {
+            color: #555879;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        .projects-placeholder {
+            background-color: white;
+            border: 2px dashed #98A1BC;
+            border-radius: 12px;
+            padding: 60px 20px;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 600px;
+            transition: all 0.3s ease;
+        }
+
+        .projects-placeholder:hover {
+            border-color: #555879;
+            box-shadow: 0 4px 20px rgba(85, 88, 121, 0.1);
+        }
+
+        .projects-placeholder h3 {
+            color: #555879;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .projects-placeholder p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #555879;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .header-content p {
+                font-size: 1rem;
+            }
+
+            .about h2,
+            .projects h2 {
+                font-size: 1.7rem;
+            }
+
+            .about-content p {
+                font-size: 1rem;
+            }
+
+            .projects-placeholder {
+                padding: 40px 15px;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-content h1 {
+                font-size: 1.8rem;
+            }
+
+            .about,
+            .projects {
+                padding: 60px 0;
+            }
+
+            .about h2,
+            .projects h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Subtle animations */
+        .about-content,
+        .projects-placeholder {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
-    <h2>hello world</h2>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Punit Jangid</h1>
+                <p>Computer Applications Graduate & Developer</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    Hello! I'm Punit Jangid, a passionate developer with a strong foundation in computer applications. 
+                    I enjoy creating elegant solutions to complex problems and am always eager to learn new technologies 
+                    and expand my skill set.
+                </p>
+                <p>
+                    With a keen eye for detail and a love for clean, efficient code, I strive to build applications 
+                    that are not only functional but also user-friendly and visually appealing.
+                </p>
+                <div class="education">
+                    <h3>Education</h3>
+                    <p>Bachelor of Computer Applications (BCA)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-placeholder">
+                <h3>Coming Soon</h3>
+                <p>
+                    This section will showcase my latest projects and work. 
+                    I'll be adding project links, descriptions, and technologies used very soon. 
+                    Stay tuned for updates!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Punit Jangid. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
